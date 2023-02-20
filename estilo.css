@@ -4,9 +4,11 @@
     margin: 0;
     font-family: poppins,sans-serif;
     text-decoration: none;
+    background: #222;
 }
 body{
     overflow-x:  hidden;
+    background:#222;
 }
 .hero-header{
     width: 100%;
