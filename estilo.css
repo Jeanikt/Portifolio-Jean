@@ -34,7 +34,7 @@ header{
 }
 .logo i{
     height: 45px;
-    width: 445ppx;
+    width: 45px;
     background-color:#007ced;
     border-radius: 50%;
     color: #fff;
@@ -102,6 +102,89 @@ nav .navlinks li a{
 .hero-pic img:hover{
     transform: scale(1.2);
 }
+.card {
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    height: 180px;
+    width: 300px;
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 5px 7px 25px rgba(0,0,0,0.5);
+  /*   margin-left: -50px; */
+    transition: 0.4s ease-out;
+    position: relative;
+    margin: auto;
+  }
+  
+  .card:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+  }
+  
+  .card:hover ~ .card {
+    position: relative;
+    transition: 0.4s ease-out;
+  }
+  
+  .title {
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    top: 45px;
+  }
+  
+  .bar {
+    position: absolute;
+    top: 100px;
+    height: 5px;
+    width: 150px;
+  }
+  
+  .emptybar {
+    background-color: #2e3033;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .filledbar {
+    position: absolute;
+    top: 0px;
+    z-index: 3;
+    width: 0px;
+    height: 100%;
+    background: rgb(0,154,217);
+    background: linear-gradient(90deg, rgba(255,186,0,1)  0%, rgba(154,217,0,1) 65%,  rgba(0,154,217,1)100%);
+    transition: 0.6s ease-out;
+  }
+  
+  .card:hover .filledbar {
+    width: 120px;
+    transition: 0.4s ease-out;
+  }
+  
+  .circle {
+    position: absolute;
+    top: 150px;
+    left: calc(50% - 60px);
+  }
+  
+  .stroke {
+    stroke: #007ced;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 360;
+    transition: 0.6s ease-out;
+  }
+  
+  svg {
+    fill: #2e3033;
+    stroke-width: 2px;
+  }
+  
+  .card:hover .stroke {
+    stroke-dashoffset: 100;
+    transition: 0.6s ease-out;
+  }
 .hero-text{
     max-width: 500px;
     display: flex;
