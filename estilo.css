@@ -104,6 +104,24 @@ nav .navlinks li a{
 .hero-pic img:hover{
     transform: scale(1.2);
 }
+h3{
+    color: #d5d5d5;
+    font-size: 50px;
+    font-family: poppins,sans-serif;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+h3:hover{
+    transform: scale(1.2);
+    transition: 0.4s ease-out;
+    color: #007ced;
+}
+h2{
+    color: #828282;
+    font-size: 28px;
+    font-family: poppins,sans-serif;
+}
 .card {
     justify-content: space-around;
     align-items: center;
@@ -234,64 +252,84 @@ nav .navlinks li a{
     color: #007ced;
     transform: rotate(360deg);
 }
-/* design responsivo & navbar*/
-@media(max-width:930px)
-{
-    nav .togglebtn{
-        display: initial;
-    }
 
-    .click{
-        top: 45px;
-    }
-    .click span{
-        position: absolute;
-        margin-top: 12px;
-    }
-    .click span:first-child{
-        transform: rotate(-45deg);
-    }
-    .click span:nth-child(2)
-    {
-        opacity: 0;
-        margin: 0;
-    }
-    .click span:last-child{
-        transform: rotate(45deg);
-        top: 0;
-    }
-    nav .navlinks{
-        position: absolute;
-        top: 110px;
-        right: -100%;
-        bottom: 0;
-        width: 60%;
-        height: 100vh;
-        background-color: #222;
-        z-index: 3;
-        box-shadow: 5px 13px rgba(0,0,0,0.1);
-        transition: 0.5s;
-        padding: 25px 0px;
-    }
-    nav .navlinks li{
-        display: block;
-    }
-    nav .navlinks li a{
-        display: block;
-        margin-bottom: 15px;
-        text-align: center;
-    }
-    nav .navlinks.open{
-        right: 0;
+section#skills {
+    margin: 2.5rem 0 10rem 0
+}
+
+section#skills .skills .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+section#skills .skills .container h2 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 3.2rem;
+    color: #F9F9F9;
+    font-weight: 600;
+    margin-bottom: 10rem
+}
+
+@media (max-width: 480px) {
+    section#skills .skills .container h2 {
+        margin-bottom:5rem
     }
 }
-@media(max-width:768px)
-{
-    .container{
-        flex-direction: column;
-        padding-top: 2rem;
+
+section#skills .skills .container .cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5rem
+}
+
+@media (max-width: 992px) {
+    section#skills .skills .container .cards {
+        flex-wrap:wrap;
+        justify-content: center
     }
-    .hero-text{
-        padding: 40px 0px;
-    }
+}
+
+section#skills .skills .container .cards .box {
+    position: relative;
+    text-align: center;
+    background-color: #212121;
+    width: 12rem;
+    aspect-ratio: 1;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 2.5rem;
+    cursor: pointer;
+    transition: 0.2s
+}
+
+section#skills .skills .container .cards .box p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #007ced;
+    margin-bottom: 1.5rem
+}
+
+section#skills .skills .container .cards .box img {
+    width: 4rem
+}
+
+section#skills .skills .container .cards .box::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0.3rem;
+    background-image: linear-gradient(90deg, #007ced 0%, #007ced 92.32%);
+    bottom: -0.1rem;
+    left: 0
+}
+
+section#skills .skills .container .cards .box:hover {
+    transform: scale(1.1)
 }
