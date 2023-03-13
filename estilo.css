@@ -82,6 +82,16 @@ nav .navlinks li a{
     color: #e5e5e5;
     margin-right: 2.5rem;
 }
+@media(max-width:768px)
+{
+    .container{
+        flex-direction: column;
+        padding-top: 2rem;
+    }
+    .hero-text{
+        padding: 40px 0px;
+    }
+}
 .container{
     display: flex;
     justify-content: space-around;
@@ -271,11 +281,6 @@ section#skills .skills .container h2 {
     margin-bottom: 10rem
 }
 
-@media (max-width: 480px) {
-    section#skills .skills .container h2 {
-        margin-bottom:5rem
-    }
-}
 
 section#skills .skills .container .cards {
     display: flex;
@@ -284,12 +289,6 @@ section#skills .skills .container .cards {
     gap: 5rem
 }
 
-@media (max-width: 992px) {
-    section#skills .skills .container .cards {
-        flex-wrap:wrap;
-        justify-content: center
-    }
-}
 
 section#skills .skills .container .cards .box {
     position: relative;
