@@ -52,7 +52,7 @@ header{
     font-weight: 500;
     color: #fff;
 }
-/*
+
 nav .togglebtn{
     width: 35px;
     height: 35px;
@@ -83,7 +83,7 @@ nav .navlinks li a{
     margin-bottom: 15px;
     
 }
-*/
+
 .container{
     display: flex;
     justify-content: space-around;
